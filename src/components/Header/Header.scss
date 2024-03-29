@@ -1,0 +1,16 @@
+.header__main {
+    position: sticky;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .header__item__home {
+        margin-left: 10px;
+    }
+    .header__item__page > * {
+        margin-right: 10px;
+    }
+}
