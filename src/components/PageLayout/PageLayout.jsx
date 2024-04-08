@@ -6,16 +6,20 @@ import PartThree from "../../pages/PartThree";
 import PartTwo from "../../pages/PartTwo";
 import Header from "../Header";
 import { useState } from "react";
+import Todo from "../../pages/Todo";
 
 function PageLayout() {
     const [options, setOptions] = useState({
-        anchors: ['sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour'],
+        anchors: ['todo','sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour'],
     });
 
     return (
         <div className="layout__container">  
             <Header />
             <SectionsContainer {...options}>
+                <Section>
+                    <Todo/>
+                </Section>
                 <Section>
                     <Home setOptions={setOptions} options={options} />
                 </Section>
